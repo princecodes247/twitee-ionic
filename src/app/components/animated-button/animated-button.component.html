@@ -1,0 +1,17 @@
+
+<ion-button *ngIf="valid; else filled" (click)="updateState()" class="animated-button ">
+	<ion-icon  name="{{class}}-outline"></ion-icon>
+	<div class="count">
+		<p>{{count+1}}</p>
+	<p>{{count}}</p>
+	</div>
+</ion-button>
+<ng-template #filled>
+	<ion-button (click)="updateState()" class=" {{class}} animated-button">
+		<ion-icon  name={{class}} fill="#333"></ion-icon>
+		<div class="count">
+			<p>{{count-1}}</p>
+		<p>{{count}}</p>
+		</div>
+</ion-button>
+</ng-template>

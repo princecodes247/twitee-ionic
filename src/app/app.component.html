@@ -1,3 +1,69 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+	<ion-header [translucent]="true">
+  <ion-toolbar>
+      <ion-buttons slot="end">
+ 
+    <ion-button>
+      
+    <ion-icon name="cog-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-buttons slot="start">
+    
+    <ion-button (click)="openFirst()">
+    <div class="menu-img"></div>
+    
+    </ion-button>
+  </ion-buttons>
+    <ion-title id="top-logo"><ion-icon name="logo-twitter"></ion-icon></ion-title>
+  </ion-toolbar>
+</ion-header>
+	<ion-menu side="start" menuId="first" contentId="main">
+
+      <div class="profile">
+      			<div class="profile-img">
+      	
+      </div>
+      <div class="profile-details">
+      	<div class="profile-details-top">
+      		<h4>Prince Dev</h4>
+      		<ion-button fill="clear">
+      			<ion-icon color="primary" name="chevron-down-outline"></ion-icon>
+      		</ion-button>
+      	</div>
+      	<p>@princecodess247</p>
+      	<span class="profile-details-stats">
+      		<p>455 Following</p>
+      		<p>90 Followers</p>
+      	</span>
+      </div>
+
+      </div>
+  <ion-content>
+    <ion-list>
+      	<a routerLink="/tabs/tab2">
+      <ion-item>
+      		<ion-icon name="person-outline"></ion-icon>
+      		<ion-label>Profile</ion-label>
+      </ion-item>
+      	</a>
+       	<a routerLink="/tabs/tab2">
+      <ion-item>
+      		<ion-icon name="list-outline"></ion-icon>
+      		<ion-label>Lists</ion-label>
+      </ion-item>
+      	</a>
+      
+     
+    </ion-list>
+    <ion-list>
+    	<a routerLink="/tabs/tab2">
+      <ion-item>
+      		<ion-label>Settings and privacy</ion-label>
+      </ion-item>
+      	</a>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

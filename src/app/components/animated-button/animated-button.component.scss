@@ -1,0 +1,31 @@
+.count {
+	margin-left: 5px;
+	flex-direction: column;
+	grid-gap: 1px;
+	transform: translateY(50%);
+	animation: 500ms slideUp forwards;
+	font-size: 0.9em;
+}
+.heart {
+	--color: red;
+}
+.sync {
+	--color: #0d5;
+}
+.chatbubble {
+	--color: purple;
+}
+.animated-button {
+	
+	color: var(--color);
+}
+
+
+@keyframes slideUp {
+	0% {
+	transform: translateY(50%);
+	}
+	100% {
+		transform: translateY(-20%);
+	}
+}

@@ -1,0 +1,52 @@
+ion-item {
+display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	.twit {
+	&-right {
+		display: flex;
+		flex-direction: column;
+		padding: 10px;
+		grid-gap: 0px;
+		p {
+			font-size: 0.8em;
+		}
+	}
+		&-left {
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+		.twit-img {
+			margin-top: 20px;
+			width: 40px;
+		height: 40px;
+		background: #333;
+		border-radius: 100px
+		}
+	}
+	&-top {
+		h5 {
+			margin: 0;
+			padding: 0;
+			font-size: 0.8em;
+			font-weight: bold;
+			span {
+				opacity: 0.6;
+
+			}
+		}
+	}
+	}
+}
+
+ion-buttons {
+	display: flex;
+	ion-button {
+	flex: 1;
+	* {
+	margin-right: 5px;
+	}
+	}
+}

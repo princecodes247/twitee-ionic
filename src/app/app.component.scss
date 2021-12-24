@@ -1,0 +1,45 @@
+#top-logo {
+	color: var(--ion-color-primary);
+	text-align: center;
+}
+
+ion-toolbar {
+	color: var(--ion-color-primary);
+	--color: var(--ion-color-primary);	
+	.menu-img {
+		width: 30px;
+		height: 30px;
+		border-radius: 100px;
+		background: #333;
+	}
+}
+.profile {
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+		flex-direction: column;
+	&-img {
+		width: 50px;
+		height: 50px;
+		border-radius: 100px;
+		margin-bottom: 30px;
+		background: #000;
+	}
+	&-details {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-self: stretch;
+		&-top {
+			display: flex;
+			justify-content: space-between;
+			grid-gap: 15px;
+		}
+		&-stats {
+			display: flex;
+			grid-gap: 15px;
+		}
+	}
+}
